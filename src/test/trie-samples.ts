@@ -101,7 +101,8 @@ export function splitWords(dict: string): string[] {
 }
 
 export function readDictionary(): Promise<string[]> {
-  return readFile(path.resolve(process.env['PROJ_DIR'], 'src/test/data/ospd3.txt'))
+  let projDir:string = process.env['PROJ_DIR']!;
+  return readFile(path.resolve(projDir, 'src/test/data/ospd3.txt'))
     .then((result: string) => {
       let words = splitWords(result);
       // Remove blank word at the end

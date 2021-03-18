@@ -11,6 +11,7 @@
   "scripts": {
     "test": "tools/run-tests"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mckoss/dawg.git"
@@ -27,13 +28,18 @@
   },
   "homepage": "https://github.com/mckoss/dawg#readme",
   "devDependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/register": "^7.7.4",
     "@types/chai": "^3.4.35",
     "@types/mocha": "^2.2.39",
     "@types/node": "^7.0.5",
     "chai": "^3.5.0",
     "istanbul": "^0.4.5",
-    "mocha": "^3.2.0",
+    "mocha": "^8.3.2",
     "source-map-support": "^0.4.11",
+    "ts-node": "^9.1.1",
     "tslint": "^4.5.0",
     "typescript": "^2.2.1"
   }
